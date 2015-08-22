@@ -30,4 +30,4 @@ See [PostCSS](https://github.com/postcss/postcss) docs for examples for your env
 
 ## Credits
 
-* Inspiration from [Australian Stylesheets](https://github.com/dp-lewis/postcss-australian-stylesheets) and [Canadian Stylesheets](https://github.com/chancancode/postcss-canadian-stylesheets)
+* Inspiration from [Australian Style Sheets](https://github.com/dp-lewis/postcss-australian-stylesheets) and [Canadian Style Sheets](https://github.com/chancancode/postcss-canadian-stylesheets)
