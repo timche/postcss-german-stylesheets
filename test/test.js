@@ -15,10 +15,14 @@ var test = function (input, output, opts, done) {
 
 describe('postcss-german-stylesheets', function () {
 
-    /* Write tests here
+    // Properties
+    it('converts farbe to color', function (done) {
+        test('a{ farbe: white; }', 'a{ color: white; }', {}, done);
+    });
 
-    it('does something', function (done) {
-        test('a{ }', 'a{ }', { }, done);
-    });*/
+    // Values
+    it('converts grau to gray', function (done) {
+        test('a{ color: grau; }', 'a{ color: gray; }', {}, done);
+    });
 
 });
