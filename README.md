@@ -1,12 +1,8 @@
 # PostCSS German Stylesheets
 
-[![Build Status][ci-img]][ci]
+[![travis][https://travis-ci.org/timche/postcss-german-stylesheets.svg?style=flat-square]][https://travis-ci.org/timche/postcss-german-stylesheets]
 
-[PostCSS] plugin for writing German Stylesheets.
-
-[PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/timche/postcss-german-stylesheets.svg
-[ci]:      https://travis-ci.org/timche/postcss-german-stylesheets
+[PostCSS](https://github.com/postcss/postcss) plugin for writing German Stylesheets.
 
 ## German syntax
 ```css
