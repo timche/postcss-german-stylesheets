@@ -1,4 +1,6 @@
-# PostCSS German Stylesheets [![Build Status][ci-img]][ci]
+# PostCSS German Stylesheets
+
+[![Build Status][ci-img]][ci]
 
 [PostCSS] plugin for writing German Stylesheets.
 
