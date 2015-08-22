@@ -26,7 +26,7 @@
 postcss([ require('postcss-german-stylesheets') ])
 ```
 
-See [PostCSS] docs for examples for your environment.
+See [PostCSS](https://github.com/postcss/postcss) plugin for writing German Stylesheets. docs for examples for your environment.
 
 ## Credits
 
