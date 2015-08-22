@@ -4,7 +4,7 @@ module.exports = postcss.plugin('postcss-german-stylesheets', function (opts) {
     opts = opts || {};
 
     return function (css) {
-        css.eachDecl(function transformDecl(decl) {
+        css.walkDecls(function transformDecl(decl) {
             // Properties
             decl.prop  = decl.prop.replace('farbe', 'color');
             // Values
