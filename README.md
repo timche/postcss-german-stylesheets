@@ -46,7 +46,7 @@ you will get:
 }
 ```
 
-Checkout [tests](test) for more examples.
+Checkout [index.js](index.js) for all available properties and values.
 
 ## Contributing
 
