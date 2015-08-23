@@ -12,7 +12,8 @@ Make sure you have the following dependencies installed on your machine:
 
 These npm packages are also needed:
 
-- gulp `$ npm install -g gulp`
+- gulp
+    - `$ npm install -g gulp`
 
 ## Development
 
