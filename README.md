@@ -23,7 +23,7 @@ var germanStylesheets = require("postcss-german-stylesheets")
 // css to be processed
 var css = fs.readFileSync("input.css", "utf8")
 
-// process css using postcss-custom-properties
+// process css using postcss-german-stylesheets
 var output = postcss()
   .use(germanStylesheets())
   .process(css)
