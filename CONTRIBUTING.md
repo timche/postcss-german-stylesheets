@@ -2,8 +2,6 @@
 
 You want to contribute something to this project to make it more awesome? This document shows you how!
 
-Please respect the coding style and make sure to pass all provided tests before submitting a pull request. Also add relevant tests when necessary (i.e. adding new properties).
-
 ## Dependencies
 
 Make sure you have the following dependencies installed on your machine:
@@ -17,6 +15,8 @@ These npm packages are also needed:
 - gulp `$ npm install -g gulp`
 
 ## Development
+
+Please respect the coding style and make sure to pass all provided tests before submitting a pull request. Also add relevant tests when necessary (i.e. adding new properties).
 
 1. Clone this repository
 
