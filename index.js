@@ -12,8 +12,14 @@ module.exports = postcss.plugin('postcss-german-stylesheets', function (opts) {
             decl.prop = decl.prop.replace('außenabstand', 'margin');
             decl.prop = decl.prop.replace('außenabstand-links', 'margin-left');
             decl.prop = decl.prop.replace('außenabstand-oben', 'margin-top');
-            decl.prop = decl.prop.replace('außenabstand-rechts', 'margin-right');
-            decl.prop = decl.prop.replace('außenabstand-unten', 'margin-bottom');
+            decl.prop = decl.prop.replace(
+                'außenabstand-rechts',
+                'margin-right'
+            );
+            decl.prop = decl.prop.replace(
+                'außenabstand-unten',
+                'margin-bottom'
+            );
             decl.prop = decl.prop.replace('unten', 'bottom');
             decl.prop = decl.prop.replace('breite', 'width');
             decl.prop = decl.prop.replace('ebene', 'z-index');
@@ -41,8 +47,13 @@ module.exports = postcss.plugin('postcss-german-stylesheets', function (opts) {
             decl.prop = decl.prop.replace('innenabstand', 'padding');
             decl.prop = decl.prop.replace('innenabstand-left', 'padding-left');
             decl.prop = decl.prop.replace('innenabstand-oben', 'padding-top');
-            decl.prop = decl.prop.replace('innenabstand-rechts', 'padding-right');
-            decl.prop = decl.prop.replace('innenabstand-unten', 'padding-bottom');
+            decl.prop = decl.prop.replace(
+                'innenabstand-rechts',
+                'padding-right'
+            );
+            decl.prop = decl.prop.replace(
+                'innenabstand-unten',
+                'padding-bottom');
             decl.prop = decl.prop.replace('kontur', 'outline');
             decl.prop = decl.prop.replace('kontur-breite', 'outline-width');
             decl.prop = decl.prop.replace('kontur-farbe', 'outline-color');
