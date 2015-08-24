@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var postcss = require('postcss');
 
 module.exports = postcss.plugin('postcss-german-stylesheets', function (opts) {
