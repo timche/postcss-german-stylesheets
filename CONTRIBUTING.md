@@ -17,32 +17,32 @@ These npm packages are also needed:
 
 ## Development
 
-Please respect the coding style and make sure to pass all provided tests before submitting a pull request. Also add relevant tests when necessary (i.e. adding new properties).
+Please respect the coding style and make sure to pass all provided tests before submitting a pull request.
 
-- Clone this repository
+* Clone this repository:
 
-```console
-$ git clone https://github.com/timche/postcss-german-stylesheets.git
-```
+    ```console
+    $ git clone https://github.com/timche/postcss-german-stylesheets.git
+    ```
 
-- Work on a branch
+* Work on a branch:
 
-```console
-$ git checkout -b feature-1
-```
+    ```console
+    $ git checkout -b feature-1
+    ```
 
-- Install all dependencies
+* Install all dependencies:
 
-```console
-$ npm install
-```
+    ```console
+    $ npm install
+    ```
 
-- Let gulp test your code while you do changes
+* Let gulp test your code while you do changes:
 
-```console
-$ gulp watch
-```
+    ```console
+    $ gulp watch
+    ```
 
-- Do your work
+* Do your work and also add relevant tests when necessary (i.e. adding new properties).
 
-- When all tests pass, you are ready to submit a pull request with your changes
+* When all tests pass, you are ready to submit a pull request with your changes.
