@@ -38,12 +38,12 @@ function valueTest(german, english, property) {
 
 describe('postcss-german-stylesheets', function () {
     // Test Properties
-    _.forEach(plugin.mapProperties, function (key, value) {
+    _.forEach(plugin.mapProperties, function (value, key) {
         propertyTest(value, key, '10px');
     });
 
     // Test Values
-    _.forEach(plugin.mapValues, function (key, value) {
+    _.forEach(plugin.mapValues, function (value, key) {
         valueTest(value, key, 'color');
     });
 });
