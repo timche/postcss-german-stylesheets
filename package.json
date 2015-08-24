@@ -1,6 +1,6 @@
 {
   "name": "postcss-german-stylesheets",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "PostCSS plugin for writing German Stylesheets",
   "keywords": [
     "postcss",
