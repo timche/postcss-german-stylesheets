@@ -136,3 +136,7 @@ module.exports = postcss.plugin('postcss-german-stylesheets', function (opts) {
         });
     };
 });
+
+// Export Properties and Values for testing
+module.exports.mapProperties = mapProperties;
+module.exports.mapValues = mapValues;
