@@ -34,7 +34,11 @@ Using this `input.css`:
 
 ```css
 .foo {
-    farbe: grau;
+    höhe: 300px;
+    außenabstand-unten: 10px;
+    schrift-größe: 20px;
+    hintergrund-farbe: schwarz;
+    farbe: weiß;
 }
 ```
 
@@ -42,7 +46,11 @@ you will get:
 
 ```css
 .foo {
-    color: gray;
+    height: 300px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
 }
 ```
 
