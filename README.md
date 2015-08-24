@@ -36,7 +36,7 @@ Using this `input.css`:
 .foo {
     höhe: 300px;
     außenabstand-unten: 10px;
-    schrift-größe: 20px;
+    schrift-größe: 20px !wichtig;
     hintergrund-farbe: schwarz;
     farbe: weiß;
 }
@@ -48,7 +48,7 @@ you will get:
 .foo {
     height: 300px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 20px !important;
     background-color: black;
     color: white;
 }
