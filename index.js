@@ -15,7 +15,7 @@ var mapProperties = {
     'border-collapse': 'rahmen-kollaps',
     'border-color': 'rahmen-farbe',
     'border-left-color': 'rahmen-links-farbe',
-    'border-left-stlye': 'rahmen-links-stil',
+    'border-left-style': 'rahmen-links-stil',
     'border-left-width': 'rahmen-links-breite',
     'border-left': 'rahmen-links',
     'border-right-color': 'rahmen-rechts-farbe',
