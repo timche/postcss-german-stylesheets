@@ -46,4 +46,9 @@ describe('postcss-german-stylesheets', function () {
     _.forEach(plugin.mapValues, function (value, key) {
         valueTest(value, key, 'color');
     });
+
+    // Test important
+    it('converts !wichtig to !important', function (done) {
+        test('a{ color: white !wichtig; }', 'a{ color: white !important; }', {}, done);
+    });
 });
