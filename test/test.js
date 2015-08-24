@@ -14,16 +14,36 @@ var test = function (input, output, opts, done) {
     });
 };
 
+function propertyTest(german, english, value) {
+    it('converts ' + german + ' to ' + english, function (done) {
+        test(
+            'a{ ' + german + ': ' + value + '; }',
+            'a{ ' + english + ': ' + value + '; }',
+            {},
+            done
+        );
+    });
+}
+
+function valueTest(german, english, property) {
+    it('converts ' + german + ' to ' + english, function (done) {
+        test(
+            'a{ ' + property + ': ' + german + '; }',
+            'a{ ' + property + ': ' + english + '; }',
+            {},
+            done
+        );
+    });
+}
+
 describe('postcss-german-stylesheets', function () {
-
-    // Properties
-    it('converts farbe to color', function (done) {
-        test('a{ farbe: white; }', 'a{ color: white; }', {}, done);
+    // Test Properties
+    _.forEach(plugin.mapProperties, function (key, value) {
+        propertyTest(value, key, '10px');
     });
 
-    // Values
-    it('converts grau to gray', function (done) {
-        test('a{ color: grau; }', 'a{ color: gray; }', {}, done);
+    // Test Values
+    _.forEach(plugin.mapValues, function (key, value) {
+        valueTest(value, key, 'color');
     });
-
 });
