@@ -23,7 +23,7 @@ var germanStylesheets = require("postcss-german-stylesheets")
 // css to be processed
 var css = fs.readFileSync("input.css", "utf8")
 
-// process css using postcss-custom-properties
+// process css using postcss-german-stylesheets
 var output = postcss()
   .use(germanStylesheets())
   .process(css)
@@ -46,7 +46,7 @@ you will get:
 }
 ```
 
-Checkout [tests](test) for more examples.
+Checkout [index.js](index.js) for all available properties and values.
 
 ## Contributing
 

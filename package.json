@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/timche/postcss-german-stylesheets",
   "dependencies": {
+    "lodash": "^3.10.1",
     "postcss": "^5.0.2"
   },
   "devDependencies": {
