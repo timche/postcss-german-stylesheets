@@ -1,3 +1,8 @@
+## 0.2.0
+* Fixed mistranslation
+    * `'dick'` -> `'fett'` (Thanks @Boldewyn)
+* Added more colors as values. See PR #5 for full list. (Thanks @ntwcklng)
+
 ## 0.1.1
 * Fixed typo in `index.js`.
     * `'border-left-stlye'` -> `'border-left-style'` (Thanks @danielhusar)
