@@ -129,7 +129,7 @@ var mapValues = {
     'darkred': 'dunkelrot',
     'darksalmon': 'dunklelachsfarbe',
     'darkseagreen': 'dunklesseegrün',
-    'darkslateblue': 'dunkleschieferblau',
+    'darkslateblue': 'dunklesschieferblau',
     'darkviolet': 'dunkelviolett',
     'deeppink': 'tiefrosa',
     'deepskyblue': 'tiefhimmelblau',
