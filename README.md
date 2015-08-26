@@ -58,7 +58,7 @@ Checkout [index.js](index.js) for all available properties and values.
 
 ## Contributing
 
-postcss-german-stylesheets is still in development and needs your help to add more German Properties and Values. See [CONTRIBUTING.md](CONTRIBUTING.md).
+postcss-german-stylesheets is still in development and needs your help to add more awesome German properties and values. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Changelog
 
