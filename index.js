@@ -84,7 +84,7 @@ var mapProperties = {
 var mapValues = {
     'absolute': 'absolut',
     'auto': 'automatisch',
-    'bold': 'dick',
+    'bold': 'fett',
     'fixed': 'fixiert',
     'hidden': 'versteckt',
     'inherit': 'erben',
