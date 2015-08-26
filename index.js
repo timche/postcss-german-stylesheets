@@ -313,7 +313,9 @@ module.exports = postcss.plugin('postcss-german-stylesheets', function (opts) {
         css.walkDecls(function transformDecl(decl) {
             // Properties
             _.forEach(mapProperties, function (value, key) {
-                decl.prop = decl.prop.replace(value, key);
+                if (decl.prop === value) {
+                    decl.prop = key;
+                }
             });
 
             // Values
