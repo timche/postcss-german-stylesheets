@@ -43,6 +43,6 @@ Please respect the coding style and make sure to pass all provided tests before 
     $ gulp watch
     ```
 
-* Do your work and also add relevant tests when necessary (i.e. adding new properties).
+* Do your work and also add relevant tests when necessary.
 
 * When all tests pass, you are ready to submit a pull request with your changes.
