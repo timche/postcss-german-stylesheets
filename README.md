@@ -30,6 +30,10 @@ var output = postcss()
   .css
 ```
 
+See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
+
+## Example
+
 Using this `input.css`:
 
 ```css
