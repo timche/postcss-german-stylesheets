@@ -7,7 +7,10 @@
 
 > [PostCSS](https://github.com/postcss/postcss) plugin for writing German Style Sheets.
 
+Ever wanted writing your CSS in German or your English is too broken? postcss-german-stylesheets lets you write your CSS in German! With [PostCSS](https://github.com/postcss/postcss) it (nearly) doesn't matter in which environment you're developing.
+
 ## Installation
+
 ```console
 $ npm install --save-dev postcss-german-stylesheets
 ```
