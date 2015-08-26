@@ -128,7 +128,7 @@ var mapValues = {
     'darkorchid': 'dunkleorchidee',
     'darkred': 'dunkelrot',
     'darksalmon': 'dunklelachsfarbe',
-    'darkseagreen': 'dunkleseegrün',
+    'darkseagreen': 'dunklesseegrün',
     'darkslateblue': 'dunkleschieferblau',
     'darkviolet': 'dunkelviolett',
     'deeppink': 'tiefrosa',
