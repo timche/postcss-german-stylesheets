@@ -1,14 +1,14 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: PostCSS German Style Sheets
+email: tim@cheung.io
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+  Ever wanted writing your CSS in German or your English is too broken?
+  postcss-german-stylesheets lets you write your CSS in German!
+  With PostCSS it (nearly) doesn't matter in which environment you're developing.
+baseurl: "/postcss-german-stylesheets" # the subpath of your site, e.g. /blog/
+url: "http://timche.github.io" # the base hostname & protocol for your site
+twitter_username: timche_
+github_username:  timche
 
 # Build settings
 markdown: kramdown
