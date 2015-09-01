@@ -1,3 +1,6 @@
+## 0.3.0
+* Added almost complete CSS 2.1 + often used CSS 3 properties. See PR #6 for full list. (Thanks @Boldewyn)
+
 ## 0.2.0
 * Fixed mistranslation
     * `'dick'` -> `'fett'` (Thanks @Boldewyn)
