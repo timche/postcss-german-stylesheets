@@ -81,7 +81,7 @@ var mapProperties = {
     'flex-basis': 'flex-grundlage',
     'flex-direction': 'flex-richtung',
     'flex-flow': 'flex-fluss',
-    'flex-grow': 'flex-wachsem',
+    'flex-grow': 'flex-wachsen',
     'flex-shrink': 'flex-schrumpfen',
     'flex-wrap': 'flex-umbruch',
     'flex': 'flex',
