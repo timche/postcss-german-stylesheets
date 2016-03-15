@@ -61,11 +61,11 @@ you will get:
 }
 ```
 
-Checkout [index.js](index.js) for all available properties and values.
+Checkout [index.js](https://github.com/timche/postcss-german-stylesheets/blob/master/index.js) for all available properties and values.
 
 ## Documentation
 
-For a full list of available properties and values see [docs/OVERVIEW.md](docs/OVERVIEW.md)
+For a full list of available properties and values see [docs/OVERVIEW.md](https://github.com/timche/postcss-german-stylesheets/blob/master/docs/OVERVIEW.md)
 
 ## Contributing
 
@@ -73,8 +73,8 @@ postcss-german-stylesheets is still in development and needs your help to add mo
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](https://github.com/timche/postcss-german-stylesheets/blob/master/CHANGELOG.md).
 
 ## License
 
-See [LICENSE](LICENSE).
+See [LICENSE](https://github.com/timche/postcss-german-stylesheets/blob/master/LICENSE).
