@@ -1,3 +1,6 @@
+## 0.3.1
+* Fixed typo in German `flex-grow`. (Thanks @sokki)
+
 ## 0.3.0
 * Added almost complete CSS 2.1 + often used CSS 3 properties. See PR #6 for full list. (Thanks @Boldewyn)
 
