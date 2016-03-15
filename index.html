@@ -1,23 +1,110 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>postcss-german-stylesheets by timche</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">postcss-german-stylesheets</h1>
+      <h2 class="project-tagline">PostCSS plugin for writing German Style Sheets</h2>
+      <a href="https://github.com/timche/postcss-german-stylesheets" class="btn">View on GitHub</a>
+      <a href="https://github.com/timche/postcss-german-stylesheets/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/timche/postcss-german-stylesheets/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-<div class="home">
+    <section class="main-content">
+      <h1>
+<a id="postcss-german-stylesheets" class="anchor" href="#postcss-german-stylesheets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>postcss-german-stylesheets</h1>
 
-  <h1 class="page-heading">Posts</h1>
+<p><a href="https://travis-ci.org/timche/postcss-german-stylesheets"><img src="https://img.shields.io/travis/timche/postcss-german-stylesheets.svg?style=flat-square" alt="travis"></a>
+<img src="https://img.shields.io/david/timche/postcss-german-stylesheets.svg?style=flat-square" alt="deps">
+<img src="https://img.shields.io/david/dev/timche/postcss-german-stylesheets.svg?style=flat-square" alt="devDeps">
+<a href="https://www.npmjs.com/package/postcss-german-stylesheets"><img src="https://img.shields.io/npm/v/postcss-german-stylesheets.svg?style=flat-square" alt="npm"></a></p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<blockquote>
+<p><a href="https://github.com/postcss/postcss">PostCSS</a> plugin for writing German Style Sheets.</p>
+</blockquote>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<p>Ever wanted writing your CSS in German or your English is too broken? postcss-german-stylesheets lets you write your CSS in German! With <a href="https://github.com/postcss/postcss">PostCSS</a> it (nearly) doesn't matter in which environment you're developing.</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
-</div>
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">npm install --save-dev postcss-german-stylesheets</span></pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// dependencies</span>
+<span class="pl-k">var</span> fs <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>fs<span class="pl-pds">"</span></span>)
+<span class="pl-k">var</span> postcss <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>postcss<span class="pl-pds">"</span></span>)
+<span class="pl-k">var</span> germanStylesheets <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>postcss-german-stylesheets<span class="pl-pds">"</span></span>)
+
+<span class="pl-c">// css to be processed</span>
+<span class="pl-k">var</span> css <span class="pl-k">=</span> <span class="pl-smi">fs</span>.<span class="pl-en">readFileSync</span>(<span class="pl-s"><span class="pl-pds">"</span>input.css<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>utf8<span class="pl-pds">"</span></span>)
+
+<span class="pl-c">// process css using postcss-german-stylesheets</span>
+<span class="pl-k">var</span> output <span class="pl-k">=</span> <span class="pl-en">postcss</span>()
+  .<span class="pl-en">use</span>(<span class="pl-en">germanStylesheets</span>())
+  .<span class="pl-en">process</span>(css)
+  .<span class="pl-smi">css</span></pre></div>
+
+<p>See <a href="https://github.com/postcss/postcss">PostCSS</a> docs for examples for your environment.</p>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
+
+<p>Using this <code>input.css</code>:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.foo</span> {
+    <span class="pl-c1">h</span>ö<span class="pl-c1">he</span>: <span class="pl-c1">300<span class="pl-k">px</span></span>;
+    <span class="pl-c1">au</span>ß<span class="pl-c1">enabstand-unten</span>: <span class="pl-c1">10<span class="pl-k">px</span></span>;
+    <span class="pl-c1">schrift-gr</span>öß<span class="pl-c1">e</span>: <span class="pl-c1">20<span class="pl-k">px</span></span> !wichtig;
+    <span class="pl-c1">hintergrund-farbe</span>: schwarz;
+    <span class="pl-c1">farbe</span>: weiß;
+}</pre></div>
+
+<p>you will get:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.foo</span> {
+    <span class="pl-c1"><span class="pl-c1">height</span></span>: <span class="pl-c1">300<span class="pl-k">px</span></span>;
+    <span class="pl-c1"><span class="pl-c1">margin-bottom</span></span>: <span class="pl-c1">10<span class="pl-k">px</span></span>;
+    <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">20<span class="pl-k">px</span></span> <span class="pl-k">!important</span>;
+    <span class="pl-c1"><span class="pl-c1">background-color</span></span>: <span class="pl-c1">black</span>;
+    <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">white</span>;
+}</pre></div>
+
+<p>Checkout <a href="index.js">index.js</a> for all available properties and values.</p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>postcss-german-stylesheets is still in development and needs your help to add more awesome German properties and values. See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog</h2>
+
+<p>See <a href="CHANGELOG.md">CHANGELOG.md</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>See <a href="LICENSE">LICENSE</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/timche/postcss-german-stylesheets">postcss-german-stylesheets</a> is maintained by <a href="https://github.com/timche">timche</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
