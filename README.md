@@ -65,7 +65,7 @@ Checkout [index.js](https://github.com/timche/postcss-german-stylesheets/blob/ma
 
 ## Documentation
 
-For a full list of available properties and values see [docs/OVERVIEW.md](https://github.com/timche/postcss-german-stylesheets/blob/master/docs/OVERVIEW.md)
+For a full list of available properties and values see [docs/OVERVIEW.md](https://github.com/timche/postcss-german-stylesheets/blob/master/docs/OVERVIEW.md).
 
 ## Contributing
 
