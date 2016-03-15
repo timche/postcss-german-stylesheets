@@ -1,6 +1,6 @@
 {
   "name": "postcss-german-stylesheets",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "PostCSS plugin for writing German Stylesheets",
   "keywords": [
     "postcss",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/timche/postcss-german-stylesheets/issues"
   },
-  "homepage": "https://github.com/timche/postcss-german-stylesheets",
+  "homepage": "http://timche.github.io/postcss-german-stylesheets",
   "dependencies": {
     "lodash": "^3.10.1",
     "postcss": "^5.0.2"
@@ -32,6 +32,6 @@
     "gulp-plumber": "^1.0.1"
   },
   "scripts": {
-    "test": "gulp"
+    "test": "gulp test"
   }
 }

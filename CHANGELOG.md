@@ -1,3 +1,6 @@
+## 0.3.2
+* Added documentation with overview of properties and values. (Thanks @ntwcklng for the suggestion)
+
 ## 0.3.1
 * Fixed typo in German `flex-grow`. (Thanks @sokki)
 
