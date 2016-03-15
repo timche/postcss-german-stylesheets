@@ -63,6 +63,10 @@ you will get:
 
 Checkout [index.js](index.js) for all available properties and values.
 
+## Documentation
+
+For a full list of available properties and values see [docs/OVERVIEW.md](docs/OVERVIEW.md)
+
 ## Contributing
 
 postcss-german-stylesheets is still in development and needs your help to add more awesome German properties and values. See [CONTRIBUTING.md](CONTRIBUTING.md).

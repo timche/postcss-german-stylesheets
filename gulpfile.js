@@ -16,6 +16,31 @@ gulp.task('test', function () {
         .pipe(mocha());
 });
 
+gulp.task('docs', function () {
+    var _ = require('lodash');
+    var fs = require('fs');
+    var plugin = require('./');
+
+    var properties = '# Properties\n| English | German |\n| ------ | ------ |';
+    var values = '\n\n# Values\n| English | German |\n| ------ | ------ |';
+    var overview = '';
+    var file = 'docs/OVERVIEW.md';
+
+    _.forEach(plugin.mapProperties, function (value, key) {
+        properties += '\n| `' + key + '` | `' + value + '` |';
+    });
+    _.forEach(plugin.mapValues, function (value, key) {
+        values += '\n| `' + key + '` | `' + value + '` |';
+    });
+    overview = properties + values;
+
+    fs.writeFile(file, overview, function (error) {
+        if(error) {
+            console.error(error);
+        }
+    });
+});
+
 gulp.task('default', ['lint', 'test']);
 
 gulp.task('watch', function () {
