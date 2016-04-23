@@ -1,3 +1,11 @@
+## 1.0.0
+* **BREAKING:** Adjusted properties and values to be more German (See docs for a list of properties and values)
+  - Mostly resolved #11
+* Upgraded to ES6 with `babel` and rewritten everything
+* Removed `gulp` - Using `npm` instead
+* Use `eslint` with `eslint-config-airbnb` and adjusted to own flavour
+* Use Node 4.x and 5.x at Travis
+
 ## 0.3.2
 * Added documentation with overview of properties and values. (Thanks @ntwcklng for the suggestion)
 

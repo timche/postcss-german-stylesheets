@@ -1,8 +1,8 @@
+.babelrc
+.eslintrc
 .gitignore
-
-node_modules/
-
-test/
 .travis.yml
-
-gulpfile.js
+node_modules/
+src/
+test/
+scripts/
