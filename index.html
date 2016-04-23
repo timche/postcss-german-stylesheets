@@ -20,42 +20,32 @@
 
     <section class="main-content">
       <h1>
-<a id="postcss-german-stylesheets" class="anchor" href="#postcss-german-stylesheets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>postcss-german-stylesheets</h1>
+<a id="postcss-german-style-sheets" class="anchor" href="#postcss-german-style-sheets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PostCSS German Style Sheets</h1>
 
 <p><a href="https://travis-ci.org/timche/postcss-german-stylesheets"><img src="https://img.shields.io/travis/timche/postcss-german-stylesheets.svg?style=flat-square" alt="travis"></a>
-<img src="https://img.shields.io/david/timche/postcss-german-stylesheets.svg?style=flat-square" alt="deps">
-<img src="https://img.shields.io/david/dev/timche/postcss-german-stylesheets.svg?style=flat-square" alt="devDeps">
 <a href="https://www.npmjs.com/package/postcss-german-stylesheets"><img src="https://img.shields.io/npm/v/postcss-german-stylesheets.svg?style=flat-square" alt="npm"></a></p>
 
 <blockquote>
 <p><a href="https://github.com/postcss/postcss">PostCSS</a> plugin for writing German Style Sheets.</p>
 </blockquote>
 
-<p>Ever wanted writing your CSS in German or your English is too broken? postcss-german-stylesheets lets you write your CSS in German! With <a href="https://github.com/postcss/postcss">PostCSS</a> it (nearly) doesn't matter in which environment you're developing.</p>
+<p>Take CSS to the next level and write your CSS in German!</p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
-<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">npm install --save-dev postcss-german-stylesheets</span></pre></div>
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">npm install postcss-german-stylesheets</span></pre></div>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
-<div class="highlight highlight-source-js"><pre><span class="pl-c">// dependencies</span>
-<span class="pl-k">var</span> fs <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>fs<span class="pl-pds">"</span></span>)
-<span class="pl-k">var</span> postcss <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>postcss<span class="pl-pds">"</span></span>)
-<span class="pl-k">var</span> germanStylesheets <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>postcss-german-stylesheets<span class="pl-pds">"</span></span>)
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// ES5</span>
+<span class="pl-k">var</span> germanStyleSheets <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>postcss-german-stylesheets<span class="pl-pds">'</span></span>)
 
-<span class="pl-c">// css to be processed</span>
-<span class="pl-k">var</span> css <span class="pl-k">=</span> <span class="pl-smi">fs</span>.<span class="pl-en">readFileSync</span>(<span class="pl-s"><span class="pl-pds">"</span>input.css<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>utf8<span class="pl-pds">"</span></span>)
+<span class="pl-c">// ES6</span>
+<span class="pl-k">import</span> <span class="pl-smi">germanStyleSheets</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>postcss-german-stylesheets<span class="pl-pds">'</span></span></pre></div>
 
-<span class="pl-c">// process css using postcss-german-stylesheets</span>
-<span class="pl-k">var</span> output <span class="pl-k">=</span> <span class="pl-en">postcss</span>()
-  .<span class="pl-en">use</span>(<span class="pl-en">germanStylesheets</span>())
-  .<span class="pl-en">process</span>(css)
-  .<span class="pl-smi">css</span></pre></div>
-
-<p>See <a href="https://github.com/postcss/postcss">PostCSS</a> docs for examples for your environment.</p>
+<p>See <a href="https://github.com/postcss/postcss#usage">PostCSS#Usage</a> for usage for your environment.</p>
 
 <h2>
 <a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
@@ -65,8 +55,8 @@
 <div class="highlight highlight-source-css"><pre><span class="pl-e">.foo</span> {
     <span class="pl-c1">h</span>ö<span class="pl-c1">he</span>: <span class="pl-c1">300<span class="pl-k">px</span></span>;
     <span class="pl-c1">au</span>ß<span class="pl-c1">enabstand-unten</span>: <span class="pl-c1">10<span class="pl-k">px</span></span>;
-    <span class="pl-c1">schrift-gr</span>öß<span class="pl-c1">e</span>: <span class="pl-c1">20<span class="pl-k">px</span></span> !wichtig;
-    <span class="pl-c1">hintergrund-farbe</span>: schwarz;
+    <span class="pl-c1">schriftgr</span>öß<span class="pl-c1">e</span>: <span class="pl-c1">20<span class="pl-k">px</span></span> !wichtig;
+    <span class="pl-c1">hintergrundfarbe</span>: schwarz;
     <span class="pl-c1">farbe</span>: weiß;
 }</pre></div>
 
@@ -80,17 +70,18 @@
     <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">white</span>;
 }</pre></div>
 
-<p>Checkout <a href="https://github.com/timche/postcss-german-stylesheets/blob/master/index.js">index.js</a> for all available properties and values.</p>
-
 <h2>
 <a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h2>
 
-<p>For a full list of available properties and values see <a href="https://github.com/timche/postcss-german-stylesheets/blob/master/docs/OVERVIEW.md">docs/OVERVIEW.md</a></p>
+<ul>
+<li><a href="https://github.com/timche/postcss-german-stylesheets/blob/master/docs/Properties.md">Properties</a></li>
+<li><a href="https://github.com/timche/postcss-german-stylesheets/blob/master/docs/Values.md">Values</a></li>
+</ul>
 
 <h2>
 <a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
 
-<p>postcss-german-stylesheets is still in development and needs your help to add more awesome German properties and values. See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<p><code>postcss-german-stylesheets</code> has only a subset of CSS and needs your help to add more German properties and values.</p>
 
 <h2>
 <a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog</h2>
@@ -110,6 +101,16 @@
 
     </section>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-76831203-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
