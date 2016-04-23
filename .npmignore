@@ -1,8 +1,0 @@
-.babelrc
-.eslintrc
-.gitignore
-.travis.yml
-node_modules/
-src/
-test/
-scripts/
