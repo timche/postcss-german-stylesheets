@@ -54,4 +54,14 @@ describe('postcss-german-stylesheets', () => {
       done
     )
   })
+
+  // Test Brackets
+  it('converts verschieben(12px, 50%) to translate(12px, 50%)', (done) => {
+    run(
+      'a{ umformung: verschieben(12px, 50%); }',
+      'a{ transform: translate(12px, 50%); }',
+      {},
+      done
+    )
+  })
 })

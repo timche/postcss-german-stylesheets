@@ -18,6 +18,10 @@ export default postcss.plugin('postcss-german-stylesheets', (opts) => {
 
       /**
        * Convert Values
+       *
+       * FIXME: looping multiple times through the keys leads
+       * to the translation of parts of already translated english
+       * values (drehen -> rotate -> redate)
        */
       Object.keys(values).forEach((value) => {
         decl.value = decl.value.replace(values[value], value)
