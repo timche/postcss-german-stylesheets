@@ -1,18 +1,18 @@
 {
   "name": "postcss-german-stylesheets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin for writing German Stylesheets",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf docs index.js",
-    "build": "babel src --out-file index.js",
+    "build": "babel src --out-dir lib",
     "build:docs": "babel-node scripts/docs",
     "lint": "eslint src",
     "test": "mocha --compilers js:babel-register",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build && npm run build:docs"
   },
   "files": [
-    "index.js"
+    "lib/*.js"
   ],
   "keywords": [
     "postcss",
