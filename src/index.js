@@ -19,11 +19,10 @@ export default postcss.plugin('postcss-german-stylesheets', (opts) => {
       /**
        * Convert Values
        */
-      Object.keys(values).some((value) => {
-        const newVal = decl.value.replace(values[value], value)
-        const isReplaced = decl.value !== newVal
-        decl.value = newVal
-        return isReplaced
+      Object.keys(values).forEach((value) => {
+        decl.value = decl.value.replace(new RegExp('\\b' + values[value] + '\\b'), value)
+        // word boundary matching doesn't catch words with 'ß'
+        if (decl.value.indexOf('ß') > -1 ) decl.value = decl.value.replace(values[value], value)
       })
 
       /**

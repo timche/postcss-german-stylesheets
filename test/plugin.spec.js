@@ -64,4 +64,24 @@ describe('postcss-german-stylesheets', () => {
       done
     )
   })
+
+  // Test not to break urls
+  it('converts url("../images/background.png") to url("../images/background.png")', (done) => {
+    run(
+      'a{ hintergrund: url("../images/background.png"); }',
+      'a{ background: url("../images/background.png"); }',
+      {},
+      done
+    )
+  })
+
+  // Test Multiple Values
+  it('converts hintergrundposition: oben links to background-position: top left', (done) => {
+    run(
+      'a{ hintergrundposition: oben links; }',
+      'a{ background-position: top left; }',
+      {},
+      done
+    )
+  })
 })
