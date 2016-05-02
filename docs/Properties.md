@@ -146,6 +146,8 @@
 | ` text-shadow ` | `textschatten` |
 | ` text-transform ` | `textumformung` |
 | ` top ` | `oben` |
+| ` transform ` | `umformung` |
+| ` transform-origin ` | `umformungsursprung` |
 | ` transition-delay ` | `übergangsverzögerung` |
 | ` transition-duration ` | `übergangsdauer` |
 | ` transition-property ` | `übergangseigenschaft` |
