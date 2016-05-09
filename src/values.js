@@ -2,6 +2,7 @@ export default {
   'absolute': 'absolut',
   'auto': 'automatisch',
   'bold': 'fett',
+  'both': 'beide',
   'fixed': 'fixiert',
   'hidden': 'versteckt',
   'inherit': 'erben',
